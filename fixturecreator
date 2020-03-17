@@ -1,0 +1,20 @@
+ public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+   
+   int teamnum;
+        System.out.println("Enter number of teams");
+        teamnum=sc.nextInt();
+        String[] teams=new String[teamnum];
+        for(int i=0;i<teamnum;i++){
+            System.out.println("Enter team name "+"[ "+i+" ]");
+            teams[i]=sc.next();
+        }
+        int t=1;
+        for(int j=0;j<teamnum-1;j++){
+            for(int k=j+1;k<teamnum;k++){
+              System.out.println("Match Number "+t+" :"+teams[j]+" vs "+teams[k]+"\n---------------------\n");
+               t++; 
+            }
+        }
+    }
+    
